@@ -4,11 +4,15 @@ class LatestEntries extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 200,
       child: Column(
         children: [
-          Text('Enrty 1'),
-          Text('Enrty 2'),
-          Text('Enrty 3'),
+          ListView.builder(
+            itemCount: 3,
+            itemBuilder: (context, index) {
+              return Text('check');
+            },
+          )
         ],
       ),
     );

@@ -65,7 +65,9 @@ class HomeScreen extends StatelessWidget {
               height: 20,
             ),
             Text('Latest Entries'),
-            LatestEntries(),
+            Expanded(
+              child: LatestEntries(),
+            )
           ],
         ),
       ),
